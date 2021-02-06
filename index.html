@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Name</title>
+</head>
+
+<body>
+    <h1>All Names</h1>
+    <h3 id="showName"></h3>
+</body>
+<script>  
+    //2----------------------------------------------------------------------
+    var firstName = ["Abdul", "Abdullah", "Sameer"];
+    var lastName = ["Razzaq", "Razzaq", "Raza"];
+    var fullName = [];
+    for (i = 0; i < firstName.length; i++) {
+        for (j = 0; j < lastName.length; j++) {
+            fullName.push(firstName[i] + " " + lastName[j] + "<br/>");
+        }
+    }
+    document.getElementById("showName").innerHTML = fullName;
+
+  
+</script>
+
+</html>
